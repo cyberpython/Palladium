@@ -1,0 +1,617 @@
+/*
+Theme Name: Palladium
+Description: Just another Wordpress theme.
+Author: George Migdos
+Author URI: http://gmigdos.wordpress.com/
+Version: 1.0
+.
+This theme is released under GNU General Public License, version 3 (GPL).
+
+http://www.gnu.org/licenses/gpl-3.0.html
+
+.
+*/
+
+html, body, wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 960px;
+}
+
+html{
+    background-color: #212121;
+}
+
+body{
+    font-family: Helvetica Neue, Arial, sans-serif;
+    background-color: #e6e4d4;
+    background-image: url('img/page-bg.png');
+    background-repeat: repeat-x;
+    color: #616566;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.screen-reader-text{
+    display: none;
+}
+
+*:focus{
+    outline: 0;
+}
+
+
+/*------------------------------------------------------------------------------
+    Header:
+------------------------------------------------------------------------------*/
+
+#branding{
+    border-bottom: 2px #ccc solid;
+    padding: 50px 0 10px 0;
+    margin-bottom: 50px;
+}
+
+
+#masthead{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #333;
+}
+
+h1#site-title,  h1#site-title a{
+    color: #000;
+    font-size: 28px;
+    margin: 0;
+    text-shadow: 0px 2px 8px #aaa;
+}
+
+h2#site-description{
+    color: #555;
+    font-size: 16px;
+    margin: 0 50px;
+}
+
+#search-box{
+    float: right;
+    margin-top: -100px;
+}
+
+#main, #header, #footer{
+    overflow: auto;
+    clear: both;
+}
+
+#main, #header{
+    width: 960px;
+    margin: 0 auto;
+}
+
+#container{
+    width: 700px;
+    min-height: 700px;
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+
+a{
+    color: #1E73B7;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+img{
+    border: 1px #ddd solid;
+}
+
+abbr, acronym{
+    cursor: help;
+}
+
+.wp-caption{
+    background-color: #efefef;
+    border: 1px #ddd solid;
+    padding: 10px;
+    text-align: center;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.wp-caption img{
+    margin-top: 5px;
+    max-width: 580px;
+    height : auto;
+}
+
+.wp-smiley{
+    border-style: none;
+}
+
+.wp-caption-text{
+    background-color: #efefef;
+}
+
+p.wp-caption-text{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.gallery-item .gallery-icon, .gallery-item .gallery-caption{
+    width: 155px;
+}
+
+.gallery-item .wp-caption-text{
+    background-color: #fff;
+}
+
+.gallery-item .gallery-caption{
+    font-size: 11px;
+}
+
+.aligncenter, .entry-content .aligncenter{
+    display: block;
+    margin: 20px auto;
+}
+
+.alignleft{
+    display: inline;
+    margin: 20px 20px 20px 0;
+    float: left;
+}
+
+.alignright{
+    display: inline;
+    margin: 20px 0 20px 20px;
+    float: right;
+}
+
+.alignnone{
+    margin: 20px 20px 20px 0;
+}
+
+.navigation{
+    display: none;
+}
+
+#nav-below.navigation{
+    clear: both;
+    overflow: auto;
+    width: 700px;
+    margin: 0 0 50px 0;
+    display: block;
+}
+
+#nav-above{
+    display: none;
+}
+
+.nav-previous, .nav-next{
+    width: 350px;
+    float: left;
+}
+
+.nav-next{
+    text-align: right;
+}
+
+ul#posts-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#posts-list>li{
+    margin-bottom: 50px;
+}
+
+ul#posts-list>li>.post, ul#posts-list>li>.page, ul#posts-list>li>.attachment{
+    background-color: #fff;
+    border: 1px #ccc solid;
+    font-family: Georgia, serif;
+    padding-bottom: 30px;
+}
+
+.post-shadow{
+    height: 10px;
+    background-image: url('img/post-shadow.png');
+    background-repeat: no-repeat;
+}
+
+.entry-title{
+	width: 600px;
+	background-color: #007FFF;
+	font-size:1.5em;
+	padding: 5px 50px;
+	margin: 20px 0 0 -20px;
+}
+
+.entry-title, .entry-title a{
+    color: #fff;
+    text-shadow: -2px 2px 5px #333;
+}
+
+.entry-title-shadow{
+    height: 10px;
+    background-image: url('img/post-shadow.png');
+    background-repeat: no-repeat;
+    margin: 0 0 0 -20px;
+}
+
+.ribbon-corner{
+	background-image:url(img/ribbon-corner.png);
+	width:20px;
+	height:20px;
+	margin: -10px 0 0 -20px;
+	z-index: 0;
+}
+
+
+.entry-meta, .entry-utility{
+    margin: 0 30px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.entry-meta a, .entry-utility a{
+    text-decoration: none;
+}
+
+
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4,
+ .entry-content h5, .entry-content h6{
+    color: #555;
+}
+
+.entry-content{
+    margin: 0 0 30px 0;
+    padding: 0 30px;
+    clear: both;
+    overflow: hidden;
+}
+
+.entry-content.no-title{
+    padding: 30px 30px 0 30px;
+}
+
+.entry-content p{
+    margin: 0 0 20px 0;
+}
+
+ .fullwidth{
+    width: 700px !important;
+    height: auto !important;
+    margin-left: -30px;
+    margin-bottom: 30px;
+    border-left: none;
+    border-right: none;
+    clear: both;
+ }
+
+.entry-content>p>iframe, .entry-content>p>embed{
+    width: 698px !important;
+    height: 420px !important;
+    margin-left: -30px;
+    margin-bottom: 30px;
+    clear: both;
+}
+
+
+.entry-content>blockquote{
+    margin: 10px -30px;
+    background-color: #efefef;
+    padding: 40px;
+    color: #333;
+    font-size: 18px;
+    font-style: italic;
+    background-image: url('img/quotes-left.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    clear: both;
+    word-wrap: break-word;
+}
+
+.entry-content blockquote cite{
+    font-style: normal;
+    font-size: 14px;
+    color: #000;
+}
+
+.entry-content blockquote cite:before{
+    content: '-- ';
+}
+
+.entry-content blockquote cite a{
+    color: #1E73B7;
+    border-bottom: 1px dotted;
+}
+
+.entry-content cite a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+
+.entry-content>pre{
+    width: 620px;
+    margin: 10px -30px;
+    background-color: #efefef;
+    padding: 40px;
+    color: #333;
+    font-size: 12px;
+    font-family: monospace;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    word-wrap: break-word;
+    clear: both;
+}
+
+
+p.attachment{
+    margin: 10px -30px;
+    background-color: #efefef;
+    color: #333;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    clear: both;
+    text-align: center;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    Sidebar:
+------------------------------------------------------------------------------*/
+
+
+#sidebar{
+    width: 200px;
+    margin: 0 10px 30px 30px;
+    float: left;
+    overflow: hidden;
+}
+
+#sidebar .widget-list, #access>div ul{
+    list-style-type: none;
+}
+
+#sidebar .widget-list, #access>div>ul{
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar div.about{
+    text-align: justify;
+}
+
+#sidebar div.about img{
+    width: 178px;
+    height: auto;
+    border: 1px #ccc solid;
+    margin: 0 0 20px 0;
+    background-color: #fff;
+}
+
+.widget-area{
+    font-size: 14px;
+    margin: 0 0 10px 20px;
+}
+
+.widget-area h2{
+    font-size: 17px;
+    color: #a5a5a5;
+    text-shadow: 0px 1px 0px #fff;
+    margin: 0 0 5px -20px;
+    line-height: 1;
+}
+
+#access .current_page_item{
+    font-weight: bold;
+}
+
+#access>div{
+    margin: 0;
+}
+
+
+/*------------------------------------------------------------------------------
+    Forms:
+------------------------------------------------------------------------------*/
+
+form textarea{
+    padding: 5px 30px;
+    border: 1px #CCC solid;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    color: #616566;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+form input[type=text], form input[type=password]{
+    border: 1px #CCC solid;
+    font-size: 16px;
+    height: 33px;
+    padding: 0 6px;
+    margin: 0 10px 10px 0;
+}
+
+form input[type=submit]{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+}
+
+
+/*------------------------------------------------------------------------------
+    Comments:
+------------------------------------------------------------------------------*/
+
+.commentlist{
+    background-color: #f5f5f5;
+    list-style-type: none;
+    border: 1px #CCC solid;
+    padding: 0;
+}
+
+.commentlist .children{
+    list-style-type: none;
+}
+
+.commentlist .children li{
+    border: 1px #ddd solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.commentlist>li{
+    border-bottom: 1px #ddd solid;
+    padding: 20px;
+}
+
+.commentlist>.comment.alt{
+    background-color: #EAEDF1;
+}
+
+.pingback, .trackback{
+    background-color: #FFFEDF;
+}
+
+.pingback.alt, .trackback.alt{
+    background-color: #FFF7DF;
+}
+
+
+li.depth-2, li.depth-4, li.depth-6{
+    background-color: #Efefef;
+}
+
+li.depth-3{
+    background-color: #EAEDF1;
+}
+
+.comment-meta, .commentmetadata{
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 30px;
+}
+
+.commentlist .reply{
+    text-align: right;
+}
+
+#respond{
+    background-color: #fff;
+    border: 1px #CCC solid;
+    margin: 10px 0 30px 0;
+    padding: 10px 30px;
+}
+
+#respond>h3{
+    margin: 0 -30px;
+    padding: 5px 30px;
+    border-top: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    background-color: #FFDE93;
+}
+
+#respond>form textarea{
+    margin: 0 -30px;
+    width: 100%;
+    border-style: none;
+    border-bottom: 1px #CCC solid;
+    border-top: 1px #CCC solid;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#respond>form input[type=submit]{
+    float: right;
+}
+
+#respond{
+    overflow: hidden;
+}
+
+#respond p.form-allowed-tags{
+    font-size: 10px;
+    font-style: italic;
+}
+
+/*------------------------------------------------------------------------------
+    Footer:
+------------------------------------------------------------------------------*/
+
+#footer{
+    position: relative;
+    background-color: #212121;
+    border-top: 1px #333 solid;
+    font-size: 10px;
+    color: #999;
+    clear: both;
+    min-width: 920px;
+    padding: 40px 20px;
+}
+
+#footer h1, #footer h2, #footer h3{
+    color: #999;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+#footer a{
+    color: #d45500;
+}
+
+
+#meta-widget{
+    margin: 0 40px 60px 40px;
+    float: right;
+    clear:both;
+}
+
+
+#meta-widget ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#colophon{
+    margin-right: 260px;
+}
+
+
+#credits{
+    clear: both;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+}
+
+#credits p{
+    text-align: right;
+}
+
+#footer-widgets>ul.widget-list{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+}
+
+#footer-widgets>ul.widget-list>li{
+    float: left;
+    margin: 0 30px 30px 0;
+    padding: 0 0 0 15px;
+    border-left: 1px #333 solid;
+    width: 160px;
+}

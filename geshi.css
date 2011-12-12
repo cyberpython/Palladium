@@ -1,0 +1,94 @@
+/*******************************************************************************
+
+    This file is part of the Palladium WordPress theme.
+
+    The Palladium WordPress theme is free software: you can redistribute it
+    and/or modify it under the terms of the GNU General Public License as
+    published by the Free Software Foundation, either version 3 of the License,
+    or (at your option) any later version.
+
+    The Palladium WordPress theme is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with the Palladium WordPress theme.
+    If not, see <http://www.gnu.org/licenses/>.
+
+ ******************************************************************************/
+pre.sourcecode, table.sourcecode{
+    margin: 10px -30px;
+    background-color: #efefef;
+    padding: 20px;
+    color: #333;
+    font-size: 12px;
+    font-family: monospace;
+    background-image: url('img/pre-code.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    clear: both;
+}
+pre.sourcecode{
+    width: 660px;
+    word-wrap: break-word;
+}
+
+table.sourcecode{
+    width: 700px;
+    border-collapse: collapse;
+}
+
+table.sourcecode td{
+    padding: 10px;
+}
+
+table.sourcecode td.ln{
+    color: #aaa;
+}
+
+table.sourcecode td.de1 pre{
+    width: 640px;
+    overflow: hidden;
+}
+
+.ln-xtra{
+    display: block;
+    background-color: #F1BEBE;
+    background-color: rgba(255,0,0,0.2);
+}
+
+table.sourcecode td.ln .ln-xtra{
+    color: #000;
+}
+
+.kw1, .kw2, .kw3, .kw4, .kw5{
+    color: #710063;
+    font-weight: bold;
+}
+
+.st0, .st_h{
+    color: #070;
+}
+
+.nu0{
+    color: #900;
+}
+
+.br0, .sy0{
+    color: #009;
+}
+
+.vim .sy0{
+    color: #333;
+}
+
+.re0, .re1, .re5{
+    color: #273273;
+}
+.co0, .co1, .co3, .coMULTI {
+    color: #777;
+    font-style: italic;
+}
