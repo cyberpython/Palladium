@@ -49,8 +49,8 @@
      
         <?php wp_head(); ?>
      
-        <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'palladium' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
-        <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'palladium' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
+        <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'palladium' ), esc_html( get_bloginfo('name'), 1 ) ); ?>" />
+        <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'palladium' ), esc_html( get_bloginfo('name'), 1 ) ); ?>" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
         
         <script type="text/javascript">
@@ -82,7 +82,7 @@
             <div id="masthead">
                 <div id="branding">
                     <h1 id="site-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></h1>
-                    <h2 id="site-description"><?php bloginfo( 'description' ) ?></h1>
+                    <h2 id="site-description"><?php bloginfo( 'description' ) ?></h2>
                 </div><!-- #branding -->
                 <div id="search-box"><?php the_widget('WP_Widget_Search', "title="); ?></div>
             </div><!-- #masthead -->

@@ -32,6 +32,7 @@
                                 </div><!-- #nav-above -->
                                 
                                 <ul id="posts-list">
+                                    <li class="placeholder"></li>
                                     <li>
                                         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                                         <?php $title = the_title("","",false); ?>
@@ -50,9 +51,9 @@
                                                         <span class="meta-prep meta-prep-entry-date"><?php _e('Posted on ', 'palladium'); ?></span>
                                                         <span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
                                                         <span class="meta-prep meta-prep-author"><?php _e('by ', 'palladium'); ?></span>
-                                                        <span class="author vcard"><a class="url fn n" href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'palladium' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
+                                                        <span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url( $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'palladium' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
                                                         <span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links"><?php _e( ' in ', 'palladium' ); ?></span><?php echo get_the_category_list(', '); ?>.</span>
-                                                        <?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tagged ', 'your-theme' ) . '</span>', ", ", "" ) ?>
+                                                        <?php the_tags( '<span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">' . __('Tagged ', 'your-theme' ) . '</span></span>', ", ", "" ) ?>
                                                         <?php edit_post_link( __( 'Edit', 'palladium' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
                                                 </div><!-- #entry-meta -->                                               
                                                 

@@ -34,6 +34,7 @@
                     <?php } ?>
                     
                     <ul id="posts-list">
+                        <li class="placeholder"></li>
                         <?php /* The Loop — with comments! */ ?>
                         <?php while ( have_posts() ) : the_post() ?>
                         <li>

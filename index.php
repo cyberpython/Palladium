@@ -34,6 +34,7 @@
                     <?php } ?>
                     
                     <ul id="posts-list">
+                        <li class="placeholder"></li>
                         <?php /* The Loop — with comments! */ ?>
                         <?php while ( have_posts() ) : the_post() ?>
                         <li>
@@ -57,7 +58,7 @@
                                                 <span class="meta-prep meta-prep-entry-date"><?php _e('Posted on ', 'palladium'); ?></span>
                                                 <a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'palladium'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><span class="entry-date"><?php the_time( get_option( 'date_format' ) ); ?></span></a>
                                                 <span class="meta-prep meta-prep-author"><?php _e('by ', 'palladium'); ?></span>
-                                                <span class="author vcard"><a class="url fn n" href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'palladium' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
+                                                <span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url( $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'palladium' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
                                                 <span class="meta-sep"> | </span>
                                                 <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'palladium' ), __( '1 Comment', 'palladium' ), __( '% Comments', 'palladium' ) ) ?></span>
                                                 <?php edit_post_link( __( 'Edit', 'palladium' ), "<span class=\"meta-sep\">|</span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t\n" ) ?>
