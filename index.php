@@ -55,7 +55,7 @@
                         <?php /* Microformatted category and tag links along with a comments link */ ?>
                                             <div class="entry-meta">
                                                 <span class="meta-prep meta-prep-entry-date"><?php _e('Posted on ', 'palladium'); ?></span>
-                                                <span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
+                                                <a href="<?php the_permalink(); ?>" title="<?php printf( __('Permalink to %s', 'palladium'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><span class="entry-date"><?php the_time( get_option( 'date_format' ) ); ?></span></a>
                                                 <span class="meta-prep meta-prep-author"><?php _e('by ', 'palladium'); ?></span>
                                                 <span class="author vcard"><a class="url fn n" href="<?php echo get_author_link( false, $authordata->ID, $authordata->user_nicename ); ?>" title="<?php printf( __( 'View all posts by %s', 'palladium' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
                                                 <span class="meta-sep"> | </span>
