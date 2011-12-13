@@ -43,3 +43,18 @@
 	left: 40px;
 }
 
+form input[type=text], form input[type=password]{
+    border: 1px #CCC solid;
+    font-size: 16px;
+    height: 21px;
+    padding:  6px;
+    margin: 0 10px 0 0;
+}
+
+
+form input[type=submit]{
+    height: 35px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
