@@ -42,8 +42,7 @@ body{
 }
 
 
-/*------------------------------------------------------------------------------
-    Header:
+/*= Header:
 ------------------------------------------------------------------------------*/
 
 #branding{
@@ -368,9 +367,44 @@ p.attachment{
 }
 
 
+/*= Tables
+------------------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------------------
-    Sidebar:
+.entry-content table{
+    background-color: #efefef;
+    border-collapse: collapse;
+    border: 1px #ddd solid;
+}
+
+.entry-content table th{
+    background-color: #0262C3;
+    border: 1px #007FFF solid;
+    color: #fff;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+.entry-content table td{
+    border: 1px #ddd solid;
+    padding: 5px 30px;
+    text-align: center;
+}
+
+.entry-content table tr.alternate td{
+    background-color: #e6e6e6;
+}
+
+.entry-content table td.label{
+    background-color: #DAE2F2;
+    border: 1px #BBCCF1 solid;
+    padding: 5px 30px;
+}
+
+.entry-content table tr.alternate td.label{
+    background-color: #DAE9F2;
+}
+
+/*= Sidebar:
 ------------------------------------------------------------------------------*/
 
 
@@ -424,8 +458,7 @@ p.attachment{
 }
 
 
-/*------------------------------------------------------------------------------
-    Forms:
+/*= Forms:
 ------------------------------------------------------------------------------*/
 
 form textarea{
@@ -452,8 +485,7 @@ form input[type=submit]{
 }
 
 
-/*------------------------------------------------------------------------------
-    Comments:
+/*= Comments:
 ------------------------------------------------------------------------------*/
 
 .commentlist{
@@ -547,8 +579,7 @@ li.depth-3{
     font-style: italic;
 }
 
-/*------------------------------------------------------------------------------
-    Footer:
+/*= Footer:
 ------------------------------------------------------------------------------*/
 
 #footer{

@@ -27,6 +27,7 @@ pre.sourcecode, table.sourcecode{
     background-image: url('img/pre-code.png');
     background-repeat: no-repeat;
     background-position: bottom right;
+    border: 0 none;
     border-top: 1px #ddd solid;
     border-bottom: 1px #ddd solid;
     clear: both;
@@ -43,6 +44,8 @@ table.sourcecode{
 
 table.sourcecode td{
     padding: 10px;
+    border: 0 none;
+    text-align: left;
 }
 
 table.sourcecode td.ln{
@@ -62,6 +65,7 @@ table.sourcecode td.de1 pre{
 
 table.sourcecode td.ln .ln-xtra{
     color: #000;
+    font-weight: bold;
 }
 
 .kw1, .kw2, .kw3, .kw4, .kw5{
