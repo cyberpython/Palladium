@@ -36,7 +36,6 @@
         <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
      
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-        <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() .'/geshi.css'; ?>" />
         <!--[if IE 7]>
         <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ."/ie7.css"; ?>" />
         <![endif]-->
@@ -81,7 +80,7 @@
         <div id="header">
             <div id="masthead">
                 <div id="branding">
-                    <h1 id="site-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></h1>
+                    <h1 id="site-title"><span><a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></h1>
                     <h2 id="site-description"><?php bloginfo( 'description' ) ?></h2>
                 </div><!-- #branding -->
                 <div id="search-box"><?php the_widget('WP_Widget_Search', "title="); ?></div>
