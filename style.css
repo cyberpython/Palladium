@@ -196,10 +196,6 @@ p.wp-caption-text{
     margin: 20px 20px 20px 0;
 }
 
-.navigation{
-    display: none;
-}
-
 #nav-below.navigation{
     clear: both;
     overflow: auto;

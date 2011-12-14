@@ -22,12 +22,11 @@
 <?php 
     $comment_count = get_comments_number();
     if($comment_count > 0){
+        echo "<div class='navigation'>".paginate_comments_links( array('prev_text' => __('&laquo; Previous comments'), 'next_text' => __('Next comments &raquo;')))."</div>";
         echo '<ul class="commentlist"><li class="placeholder"></li>';
-        wp_list_comments(array('type'=>'comment'));
+        wp_list_comments();
         echo '</ul>';
-        echo '<ul class="commentlist"><li class="placeholder"></li>';
-        wp_list_comments(array('type'=>'pings'));
-        echo '</ul>';
+        echo "<div class='navigation'>".paginate_comments_links( array('prev_text' => __('&laquo; Previous comments'), 'next_text' => __('Next comments &raquo;')))."</div>";
     }
 ?>
 

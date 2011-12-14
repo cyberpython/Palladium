@@ -27,7 +27,7 @@
             if ( is_single() ) { single_post_title(); }
             elseif ( is_home() || is_front_page() ) { bloginfo('name'); print ' | '; bloginfo('description'); get_page_number(); }
             elseif ( is_page() ) { single_post_title(''); }
-            elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . wp_specialchars($s); get_page_number(); }
+            elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . esc_html($s); get_page_number(); }
             elseif ( is_404() ) { bloginfo('name'); print ' | Not Found'; }
             else { bloginfo('name'); wp_title('|'); get_page_number(); }
         ?>
@@ -45,7 +45,7 @@
      
         <?php wp_enqueue_script("jquery"); ?>
         <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-     
+        <?php add_theme_support( 'automatic-feed-links' ); ?>
         <?php wp_head(); ?>
      
         <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'palladium' ), esc_html( get_bloginfo('name'), 1 ) ); ?>" />
@@ -75,7 +75,7 @@
         
     </head>
      
-    <body>
+    <body <?php body_class(); ?> >
     <div id="wrapper" class="hfeed">
         <div id="header">
             <div id="masthead">

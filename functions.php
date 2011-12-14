@@ -23,6 +23,9 @@
         
         load_theme_textdomain( 'palladium', TEMPLATEPATH . '/languages' );
 
+        if( !isset($content_width) ){
+            $content_width = 960;
+        }
         $locale = get_locale();
         $locale_file = TEMPLATEPATH . "/languages/$locale.php";
         if ( is_readable($locale_file) )
