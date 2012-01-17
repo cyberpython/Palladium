@@ -10,7 +10,7 @@ Just another WordPress theme
 Notes
 -----
 
- * Embedded objects (e.g. YouTube videos) must be in XHTML 1.0 Transitional compilant form.
+ * Embedded objects (e.g. YouTube videos) must be in XHTML 1.0 Transitional compliant form.
 
 Screenshot:
 ![Full page screenshot in Chromium](http://img97.imageshack.us/img97/6991/wordpressthemejustanoth.png)
